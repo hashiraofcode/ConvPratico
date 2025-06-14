@@ -5,9 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Este é um coversor de moeda que tem como objetivo ser uma ferramenta de facil acesso em caso de necessitar de um.">
     <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.png">
+    <!-- fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>CovPrático | Projeto Dev</title>
 </head>
 <body>
-    
+    <div id="container">
+         <header id="header">
+        <h1 id="titulo">ConvPrático</h1>
+        <p id="subtitulo">A forma mais prática de converter valores!!!</p>
+        </header>
+    <main>
+        <div id="bg">
+            <picture>
+                <source srcset="assets/bgMobile.jpg" media="max-width: 500px">
+                <source srcset="assets/bg.jpg" media="min-width: 2000px">
+                 <img src="assets/bgDefault.jpg" alt="backgroud" aria-hidden="true">
+            </picture>
+        </div>
+        <div id="overlay"></div>
+        <div id="display">
+             <p>Converta moedas de uma maneira muito prática</p>
+            <label for="valores">
+                <p>insira o valor desejado aqui:</p>
+                <input type="number" id="valores" placeholder="Ex: 10,00">
+            </label>
+            <div id="saida">
+                <p>$15</p>
+            </div>
+            <button>Converter valor</button>
+        </div>
+    </main>
+    </div>
 </body>
 </html>
