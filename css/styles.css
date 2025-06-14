@@ -185,15 +185,33 @@ label {
 	outline: none;
 }
 #saida {
-	width: 50px;
+	width: 250px;
 	height: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border: 1px solid #000000;
+	border-radius: 20px;
+	background-color: #ccccccc2;
 }
-
 #saida p {
 	font-size: 40px;
 	color: #000000;
 	font-weight: 500;
+}
+
+#botaãoDeConfirmação {
+	width: 200px;
+	height: 40px;
+	background-color: #126bff;
+	font-size: clamp(20px,2vw,21px);
+	border-radius: 15px;
+	border: none;
+	transition: all .5s ease-in-out;
+}
+#botaãoDeConfirmação:hover {
+	cursor: pointer;
+	background-color: #2600ff;
+	transform: translateY(-5px);
+	
 }
